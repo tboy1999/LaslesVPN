@@ -1,0 +1,48 @@
+.intro {
+  margin-top: 130px;
+  &-container {
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 37px 0;
+    box-shadow: 0 42px 114px 0 rgba(13, 16, 37, 0.064);
+    min-height: 200px;
+  }
+
+  &-user {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    gap: 0 36.5px;
+
+  }
+  &-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    min-height: 125px;
+    border-left: 2px solid #EEEFF2;
+    border-right: 2px solid #EEEFF2;
+    gap: 0 36.5px;
+  }
+  &-server {
+    justify-content: center;
+    display: flex;
+    gap: 0 36.5px;
+    width: 30%;
+  }
+
+  &-heading {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 5px;
+  }
+  &-desc {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

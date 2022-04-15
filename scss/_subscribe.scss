@@ -1,0 +1,12 @@
+.subscribe {
+  transform: translateY(50%);
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 58.5px 70px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 114px rgba(#0D1025, 0.06)
+  }
+}

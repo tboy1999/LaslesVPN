@@ -1,0 +1,109 @@
+.customer {
+  margin-top: 50px;
+  &-heading {
+    max-width: 448px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+    color: $heading-color;
+    margin: auto;
+  }
+  &-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: $text-color;
+    max-width: 555px;
+    margin:20px auto 60px;
+  }
+  &-assess {
+    max-width: 400px;
+    padding: 30px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    margin: 0 25px;
+    &.slick-active.slick-current {
+    border: 2px solid $primary-color;
+    }
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      gap: 0 20px
+    }
+    &-rating {
+      display: flex;
+      align-items: center;
+      gap: 0 10px
+    }
+    &-name h6 {
+      font-weight: 500;
+      font-size: 18px;
+      // line-height: 30px;
+      color: $heading-color;
+      margin-bottom: 5px;
+    }
+    &-name p {
+      font-weight: 400;
+      font-size: 14px;
+      // line-height: 30px;
+      color: $text-color
+    }
+    &-desc {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: $heading-color
+    }
+  }
+
+  // slick
+  .slick-dots {
+    display: flex;
+    list-style-type: none;
+    gap: 0 15px;
+    margin-top: 82px;
+    transform: translateY(50%);
+    .slick-active button {
+      width: 45px;
+      background-color: $primary-color;
+    }
+    button {
+      font-size: 0;
+      border-radius: 100px;
+      width: 15px;
+      height: 15px;
+      border: none;
+      transition: all 0.2s linear
+    }
+  }
+  .slick-arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 100rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 10;
+  }
+  .slick-prev {
+    border: 1px solid $primary-color;
+    background-color: transparent;
+    right: 80px;
+  }
+  .slick-next {
+    background-color: $primary-color;
+    right: 0;
+    border: none
+  }
+}

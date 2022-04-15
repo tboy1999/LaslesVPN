@@ -1,0 +1,32 @@
+.hero {
+  margin-top: 130px;
+  &-container {
+    display: flex;
+  }
+  &-info {
+    max-width: 555px;
+  }
+  &-heading {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    margin-bottom: 20px;
+  }
+  &-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  &-link {
+  }
+  &-right {
+    position: relative;
+  }
+  &-img {
+    position: absolute;
+    top: 50%;
+    transform: translate(40px, -50%);
+    max-width: none;
+  }
+}

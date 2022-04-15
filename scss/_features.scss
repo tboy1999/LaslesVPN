@@ -1,0 +1,36 @@
+.features {
+  margin-top: 95px;
+  margin-bottom: 131px;
+  &-container {
+    display: flex;
+    justify-content: center;
+    gap: 0 170px;
+  }
+  &-info {
+    margin-top: 55px;
+  }
+  &-heading {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    color: $heading-color;
+    max-width: 383px;
+  }
+  &-desc-heading {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $text-color;
+    margin: 20px 0
+  }
+  &-desc {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $text-color;
+    gap: 0 10px;
+    margin-bottom: 15px;
+  }
+}
