@@ -2,6 +2,7 @@
   margin-top: 130px;
   &-container {
     display: flex;
+    align-items: center;
   }
   &-info {
     max-width: 555px;
@@ -9,7 +10,7 @@
   &-heading {
     font-weight: 500;
     font-size: 50px;
-    line-height: 70px;
+    line-height: calc(70/50);
     margin-bottom: 20px;
   }
   &-desc {
@@ -30,3 +31,32 @@
     max-width: none;
   }
 }
+
+@media screen and (max-width: 1279.98px) {
+  .hero {
+    margin-top: 40px;
+  }
+  .hero-img {
+    position: static;
+    transform: translate(0);
+    max-width: 100%;
+  }
+  .hero-heading {
+    font-size: 37px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 20px 0
+  }
+  .hero-heading {
+    font-size: 30px;
+  }
+  .hero-desc {
+    margin-bottom: 20px;
+  }
+}
+
+

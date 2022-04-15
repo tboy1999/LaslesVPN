@@ -5,6 +5,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
   &-list {
     display: flex;
@@ -17,3 +18,19 @@
   }
   
 }
+
+@media screen and (max-width: 1279.98px) {
+  .header-list {
+    gap: 0 20px
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .header-list {
+    display: none
+  }
+  .header-auth {
+    display: none
+  }
+}
+

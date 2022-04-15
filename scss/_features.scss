@@ -4,6 +4,7 @@
   &-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 0 170px;
   }
   &-info {
@@ -34,3 +35,15 @@
     margin-bottom: 15px;
   }
 }
+
+@media screen and (max-width: 1279.98px) {
+  .features {
+    &-container {
+      gap: 0 20px
+    }
+    &-info {
+      max-width: 50%
+    }
+  }
+}
+

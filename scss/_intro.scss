@@ -12,8 +12,9 @@
 
   &-user {
     display: flex;
-    width: 30%;
+    width: 32%;
     justify-content: center;
+    align-items: center;
     gap: 0 36.5px;
 
   }
@@ -21,17 +22,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 36%;
     min-height: 125px;
-    border-left: 2px solid #EEEFF2;
-    border-right: 2px solid #EEEFF2;
     gap: 0 36.5px;
   }
   &-server {
     justify-content: center;
+    align-items: center;
     display: flex;
     gap: 0 36.5px;
-    width: 30%;
+    width: 32%;
   }
 
   &-heading {
@@ -46,3 +46,38 @@
     line-height: 30px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .intro-location {
+    
+    border-left: 2px solid #EEEFF2;
+    border-right: 2px solid #EEEFF2;
+  }
+}
+
+
+@media screen and (max-width: 1279.98px) {
+  .intro {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .intro {
+    &-container {
+      flex-direction: column;
+      align-items: inherit;
+      padding: 37px 60px
+    }
+    &-server,
+    &-location,
+    &-user {
+      width: 100%;
+      justify-content: unset
+    }
+    
+
+  }
+}
+
+

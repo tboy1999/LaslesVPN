@@ -93,6 +93,20 @@ img {
   background-color: linear-gradient(to bottom, red, #ffffff);
 }
 
+@media screen and (max-width: 1279.98px) {
+  .button {
+    padding: 8px 20px;
+  }
+  .button-big {
+    padding: 17.5px 40px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .button-big {
+    height: unset;
+    padding: 8px 20px;
+  }
+}
 .header {
   font-size: 16px;
   line-height: 1.1875;
@@ -101,6 +115,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .header-list {
   display: flex;
@@ -112,11 +127,26 @@ img {
   margin-left: 30px;
 }
 
+@media screen and (max-width: 1279.98px) {
+  .header-list {
+    gap: 0 20px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .header-list {
+    display: none;
+  }
+
+  .header-auth {
+    display: none;
+  }
+}
 .hero {
   margin-top: 130px;
 }
 .hero-container {
   display: flex;
+  align-items: center;
 }
 .hero-info {
   max-width: 555px;
@@ -124,7 +154,7 @@ img {
 .hero-heading {
   font-weight: 500;
   font-size: 50px;
-  line-height: 70px;
+  line-height: 1.4;
   margin-bottom: 20px;
 }
 .hero-desc {
@@ -143,6 +173,35 @@ img {
   max-width: none;
 }
 
+@media screen and (max-width: 1279.98px) {
+  .hero {
+    margin-top: 40px;
+  }
+
+  .hero-img {
+    position: static;
+    transform: translate(0);
+    max-width: 100%;
+  }
+
+  .hero-heading {
+    font-size: 37px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .hero-container {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+
+  .hero-heading {
+    font-size: 30px;
+  }
+
+  .hero-desc {
+    margin-bottom: 20px;
+  }
+}
 .intro {
   margin-top: 130px;
 }
@@ -157,25 +216,25 @@ img {
 }
 .intro-user {
   display: flex;
-  width: 30%;
+  width: 32%;
   justify-content: center;
+  align-items: center;
   gap: 0 36.5px;
 }
 .intro-location {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 36%;
   min-height: 125px;
-  border-left: 2px solid #EEEFF2;
-  border-right: 2px solid #EEEFF2;
   gap: 0 36.5px;
 }
 .intro-server {
   justify-content: center;
+  align-items: center;
   display: flex;
   gap: 0 36.5px;
-  width: 30%;
+  width: 32%;
 }
 .intro-heading {
   font-weight: 700;
@@ -189,6 +248,28 @@ img {
   line-height: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .intro-location {
+    border-left: 2px solid #EEEFF2;
+    border-right: 2px solid #EEEFF2;
+  }
+}
+@media screen and (max-width: 1279.98px) {
+  .intro {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .intro-container {
+    flex-direction: column;
+    align-items: inherit;
+    padding: 37px 60px;
+  }
+  .intro-server, .intro-location, .intro-user {
+    width: 100%;
+    justify-content: unset;
+  }
+}
 .features {
   margin-top: 95px;
   margin-bottom: 131px;
@@ -196,6 +277,7 @@ img {
 .features-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0 170px;
 }
 .features-info {
@@ -226,6 +308,14 @@ img {
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 1279.98px) {
+  .features-container {
+    gap: 0 20px;
+  }
+  .features-info {
+    max-width: 50%;
+  }
+}
 .plan {
   padding-top: 80px;
   background: linear-gradient(180deg, #fafafa, #fff);
@@ -253,6 +343,7 @@ img {
   display: flex;
   gap: 0 50px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .plan-box {
   display: flex;
@@ -301,6 +392,37 @@ img {
   color: #4F5665;
 }
 
+@media screen and (max-width: 1279.98px) {
+  .plan-body {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 40%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+
+  .plan-body::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+
+  .plan-body > * {
+    scroll-snap-align: start;
+  }
+
+  .plan-box {
+    padding: 40px 10px;
+  }
+}
 .network {
   padding-top: 150px;
   text-align: center;

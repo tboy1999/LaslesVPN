@@ -1,9 +1,6 @@
 .plan {
   padding-top: 80px;
   background: linear-gradient(180deg, #fafafa, #fff);
-  &-container{
-
- }
   &-top{
     text-align: center;
  }
@@ -26,7 +23,8 @@
   &-body{
     display: flex;
     gap: 0 50px;
-    justify-content: center
+    justify-content: center;
+    flex-wrap: wrap;
  }
   &-box{
     display: flex;
@@ -76,3 +74,34 @@
  }
 
 }
+
+@media screen and (max-width: 1279.98px) {
+  .plan-body {
+  display: grid;
+  justify-content: flex-start;
+  grid-auto-columns: 40%;
+  grid-auto-flow: column;
+  grid-gap: 1.5rem;
+  overflow: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-overflow-scrolling: touch;
+  scroll-padding: 1rem;
+  grid-template-columns: unset;
+  }
+  .plan-body::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .plan-body > *{
+    scroll-snap-align: start;
+  }
+
+  .plan-box {
+    padding: 40px 10px
+  }
+}
+
