@@ -4,6 +4,8 @@ $('.customer-list').slick({
   slidesToScroll: 1,
   dots: true,
   
+  adaptiveHeight: true,
+  
   autoplay: true,
   autoplaySpeed: 4000,
   // adaptiveHeight: true,
