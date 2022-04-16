@@ -413,6 +413,11 @@ img {
 }
 
 @media screen and (max-width: 1279.98px) {
+  .plan-box {
+    padding: 60px 52px 50px;
+  }
+}
+@media screen and (max-width: 1023.98px) {
   .plan {
     padding-top: 40px;
   }
@@ -434,6 +439,41 @@ img {
     display: grid;
     justify-content: flex-start;
     grid-auto-columns: 55%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+
+  .plan-body::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+
+  .plan-body > * {
+    scroll-snap-align: start;
+  }
+
+  .plan-box {
+    padding: 40px 10px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .plan-heading {
+    font-size: 30px;
+  }
+
+  .plan-body {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 90%;
     grid-auto-flow: column;
     grid-gap: 1.5rem;
     overflow: auto;
@@ -523,6 +563,10 @@ img {
   max-width: 555px;
   margin: 20px auto 60px;
 }
+.customer-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .customer-assess {
   max-width: 400px;
   padding: 30px;
@@ -608,6 +652,11 @@ img {
   border: none;
 }
 
+@media screen and (max-width: 1023.98px) {
+  .customer-assess {
+    max-width: 510px;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .customer-heading {
     font-size: 30px;
@@ -633,6 +682,15 @@ img {
   }
   .customer .slick-prev {
     right: 60px;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .customer-assess {
+    max-width: 480px;
+  }
+
+  .customer .slick-dots {
+    justify-content: center;
   }
 }
 .subscribe {
@@ -715,6 +773,11 @@ img {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1023.98px) {
+  .footer-right {
+    margin-left: 30px;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .footer {
     padding-top: 40px;
@@ -729,6 +792,12 @@ img {
   }
   .footer-desc {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .footer-right {
+    flex-wrap: wrap;
+    gap: 20px 0;
   }
 }
 
