@@ -18,3 +18,15 @@
     margin:20px auto 156px;
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  .network {
+    padding-top: 80px;
+    &-desc {
+      margin-bottom: 40px;
+    }
+    &-heading {
+      font-size: 30px;
+    }
+  }
+}

@@ -11,7 +11,7 @@ body {
 
 .wrap {
   max-width: 1440px;
-  margin: 50px auto 100px;
+  margin: 50px auto 0;
   background-color: #fff;
 }
 
@@ -19,6 +19,7 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+  width: 100%;
 }
 
 .button {
@@ -104,7 +105,7 @@ img {
 @media screen and (max-width: 767.98px) {
   .button-big {
     height: unset;
-    padding: 8px 20px;
+    padding: 14px 20px;
   }
 }
 .header {
@@ -195,11 +196,15 @@ img {
   }
 
   .hero-heading {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .hero-desc {
     margin-bottom: 20px;
+  }
+
+  .hero-info {
+    max-width: unset;
   }
 }
 .intro {
@@ -316,6 +321,21 @@ img {
     max-width: 50%;
   }
 }
+@media screen and (max-width: 767.98px) {
+  .features {
+    margin: 40px 0;
+  }
+  .features-container {
+    flex-direction: column;
+  }
+  .features-info {
+    max-width: unset;
+  }
+  .features-heading {
+    font-size: 24px;
+    max-width: unset;
+  }
+}
 .plan {
   padding-top: 80px;
   background: linear-gradient(180deg, #fafafa, #fff);
@@ -393,10 +413,27 @@ img {
 }
 
 @media screen and (max-width: 1279.98px) {
+  .plan {
+    padding-top: 40px;
+  }
+
+  .plan-body {
+    gap: 0 10px;
+  }
+
+  .plan-box {
+    padding: 24px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .plan-heading {
+    font-size: 30px;
+  }
+
   .plan-body {
     display: grid;
     justify-content: flex-start;
-    grid-auto-columns: 40%;
+    grid-auto-columns: 55%;
     grid-auto-flow: column;
     grid-gap: 1.5rem;
     overflow: auto;
@@ -444,6 +481,17 @@ img {
   margin: 20px auto 156px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .network {
+    padding-top: 80px;
+  }
+  .network-desc {
+    margin-bottom: 40px;
+  }
+  .network-heading {
+    font-size: 30px;
+  }
+}
 .partner {
   margin-top: 36px;
 }
@@ -560,6 +608,33 @@ img {
   border: none;
 }
 
+@media screen and (max-width: 767.98px) {
+  .customer-heading {
+    font-size: 30px;
+  }
+  .customer-assess {
+    padding: 20px 14px;
+    margin: 0 4px;
+  }
+  .customer .slick-dots {
+    margin-top: 20px;
+    gap: 0 10px;
+  }
+  .customer .slick-dots button {
+    width: 10px;
+    height: 10px;
+  }
+  .customer .slick-dots .slick-active button {
+    width: 30px;
+  }
+  .customer .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .customer .slick-prev {
+    right: 60px;
+  }
+}
 .subscribe {
   transform: translateY(50%);
 }
@@ -573,6 +648,21 @@ img {
   box-shadow: 0 0 114px rgba(13, 16, 37, 0.06);
 }
 
+@media screen and (max-width: 767.98px) {
+  .subscribe {
+    transform: translateY(0);
+    margin-top: 80px;
+  }
+  .subscribe-container {
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: unset;
+    gap: 20px 0;
+  }
+  .subscribe-container a {
+    width: max-content;
+  }
+}
 .footer {
   background: #F8F8F8;
   padding-top: 180px;
@@ -623,6 +713,23 @@ img {
   line-height: 30px;
   color: #4F5665;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 20px 0;
+  }
+  .footer-right {
+    margin-left: 0;
+  }
+  .footer-desc {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

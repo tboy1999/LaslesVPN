@@ -107,3 +107,35 @@
     border: none
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  .customer {
+    &-heading {
+      font-size: 30px;
+    }
+    &-assess {
+      padding: 20px 14px;
+      margin: 0 4px;
+    }
+    .slick-dots {
+      margin-top: 20px;
+      gap: 0 10px;
+      button {
+        width: 10px;
+        height: 10px;
+      }
+      .slick-active button {
+        width: 30px
+      }
+    }
+    .slick-arrow {
+      width: 40px;
+      height: 40px
+    }
+    .slick-prev {
+      right: 60px;
+    }
+  }
+  
+}
+

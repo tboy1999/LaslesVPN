@@ -52,10 +52,14 @@
     gap: 20px 0
   }
   .hero-heading {
-    font-size: 30px;
+    font-size: 35px;
   }
   .hero-desc {
     margin-bottom: 20px;
+  }
+  
+  .hero-info {
+    max-width: unset
   }
 }
 

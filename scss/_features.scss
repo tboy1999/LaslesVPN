@@ -39,11 +39,28 @@
 @media screen and (max-width: 1279.98px) {
   .features {
     &-container {
-      gap: 0 20px
+      gap: 0 20px;
     }
     &-info {
       max-width: 50%
     }
   }
 }
+
+@media screen and (max-width: 767.98px) {
+  .features {
+    margin: 40px 0;
+    &-container {
+      flex-direction: column;
+    }
+    &-info {
+      max-width: unset
+    }
+    &-heading {
+      font-size: 24px;
+      max-width: unset
+    }
+  }
+}
+
 
