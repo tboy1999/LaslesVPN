@@ -126,8 +126,12 @@ img {
   display: flex;
   list-style-type: none;
   align-items: center;
-  gap: 0 40px;
+  gap: 0 20px;
   color: #4F5665;
+}
+.header-item a {
+  padding: 10px;
+  display: block;
 }
 .header-item:last-child {
   display: none;
@@ -140,6 +144,31 @@ img {
   width: 30px;
 }
 
+@media (hover: hover) {
+  .header-item a {
+    position: relative;
+    transition: all 0.2s linear;
+  }
+  .header-item a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background-color: #F53838;
+    transition: all 0.2s linear;
+  }
+  .header-item a:hover {
+    color: #F53838;
+  }
+  .header-item a:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
 @media screen and (max-width: 1279.98px) {
   .header-list {
     gap: 0 20px;

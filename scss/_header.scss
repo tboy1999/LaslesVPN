@@ -12,8 +12,14 @@
     display: flex;
     list-style-type: none;
     align-items: center;
-    gap: 0 40px;
+    gap: 0 20px;
     color: $text-color;
+  }
+  &-item {
+    a {     
+     padding: 10px;
+     display: block;
+    }
   }
   &-item:last-child {
     display: none
@@ -24,6 +30,32 @@
   &-menu {
     display: none;
     width: 30px
+  }
+}
+
+@media (hover: hover) {
+  .header-item a{
+    position: relative;
+    transition: all 0.2s linear;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: auto;
+      right:  0;
+      height: 3px;
+      width: 0;
+      background-color: $primary-color;
+      transition: all 0.2s linear
+    }
+    &:hover {
+      color: $primary-color;
+      &::after {
+        width: 100%;
+        left: 0;
+        right: auto;
+      }
+    }
   }
 }
 
