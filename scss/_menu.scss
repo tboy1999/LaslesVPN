@@ -1,0 +1,43 @@
+@media screen and (max-width: 479.98px) {
+  .header {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      align-items: center;
+      padding-top:  20%;
+      background-color: #FFF;
+      z-index: 99;
+      transform: translateX(100%);
+      transition: all 0.2s linear;
+      &.list-active {
+        transform: translateX(0)
+      }
+      img {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: block !important;
+      }
+    }
+    
+    
+    &-item {
+      a {
+        display: block;
+        padding: 20px 60px;
+      }
+      &:last-child {
+        margin-top: 40px; 
+        display: block;
+        border-top: 1px solid #f6f6f6;
+      }
+    }
+
+  }
+} 

@@ -3,9 +3,6 @@ $('.customer-list').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: true,
-  
-  adaptiveHeight: true,
-  
   autoplay: true,
   autoplaySpeed: 4000,
   // adaptiveHeight: true,
@@ -44,3 +41,21 @@ $('.customer-list').slick({
       }
     }]
 });
+
+const iconMenu = document.querySelector('.header-menu')
+const headerList = document.querySelector('.header-list')
+const headerItems = document.querySelectorAll('.header-item')
+const close = document.querySelector('.header-list img')
+
+iconMenu.addEventListener('click', () => {
+  headerList.classList.add('list-active')
+})
+close.onclick = () => {
+  headerList.classList.remove('list-active')
+}
+
+headerItems.forEach(headerItem => {
+  headerItem.onclick = () => {
+    headerList.classList.remove('list-active')
+  }
+})

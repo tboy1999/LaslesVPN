@@ -1,6 +1,7 @@
 .header {
   font-size: 16px;
   line-height: calc(19/16);
+  padding-top: 50px;
   &-container {
     display:flex;
     justify-content: space-between;
@@ -10,13 +11,20 @@
   &-list {
     display: flex;
     list-style-type: none;
+    align-items: center;
     gap: 0 40px;
     color: $text-color;
   }
-  &-signup {
-    margin-left: 30px;
+  &-item:last-child {
+    display: none
   }
-  
+  &-signin {
+    padding: 13px 30px;
+  }
+  &-menu {
+    display: none;
+    width: 30px
+  }
 }
 
 @media screen and (max-width: 1279.98px) {
@@ -29,8 +37,15 @@
   .header-list {
     display: none
   }
+}
+
+@media screen and (max-width: 479.98px) {
   .header-auth {
     display: none
   }
+  .header-menu {
+    display: block
+  }
 }
+
 
