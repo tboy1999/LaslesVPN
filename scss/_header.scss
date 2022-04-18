@@ -1,5 +1,5 @@
 .header {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: calc(19/16);
   padding-top: 50px;
   &-container {
@@ -29,7 +29,7 @@
   }
   &-menu {
     display: none;
-    width: 30px
+    width: 3rem
   }
 }
 
@@ -59,9 +59,9 @@
   }
 }
 
-@media screen and (max-width: 1279.98px) {
+@media screen and (max-width: 1023.98px) {
   .header-list {
-    gap: 0 20px
+    gap: 0
   }
 }
 
@@ -72,11 +72,14 @@
 }
 
 @media screen and (max-width: 479.98px) {
-  .header-auth {
-    display: none
-  }
-  .header-menu {
-    display: block
+  .header {
+    padding-top: 10px;
+    &-auth {
+      display: none
+    }
+    &-menu {
+      display: block
+    }
   }
 }
 

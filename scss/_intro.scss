@@ -11,38 +11,38 @@
   }
 
   &-user {
+    flex: 1;
     display: flex;
-    width: 32%;
     justify-content: center;
     align-items: center;
     gap: 0 36.5px;
 
   }
   &-location {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36%;
     min-height: 125px;
     gap: 0 36.5px;
   }
   &-server {
+    flex: 1;
     justify-content: center;
     align-items: center;
     display: flex;
     gap: 0 36.5px;
-    width: 32%;
   }
 
   &-heading {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 2.5rem;
     line-height: 30px;
     margin-bottom: 5px;
   }
   &-desc {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 30px;
   }
 }

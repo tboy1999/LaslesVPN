@@ -1,22 +1,14 @@
 .customer {
-  margin-top: 50px;
+  padding-top: 5rem;
   &-heading {
     max-width: 448px;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 50px;
     text-align: center;
-    color: $heading-color;
     margin: auto;
   }
   &-desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
     text-align: center;
-    color: $text-color;
     max-width: 555px;
-    margin:20px auto 60px;
+    margin:2rem auto 6rem;
   }
   &-list {
     display: flex;
@@ -24,7 +16,7 @@
   }
   &-assess {
     max-width: 400px;
-    padding: 30px;
+    padding: 3rem;
     border: 2px solid #DDDDDD;
     border-radius: 10px;
     margin: 0 25px;
@@ -49,22 +41,24 @@
     }
     &-name h6 {
       font-weight: 500;
-      font-size: 18px;
+      font-size: 1.8rem;
       // line-height: 30px;
       color: $heading-color;
       margin-bottom: 5px;
     }
     &-name p {
       font-weight: 400;
-      font-size: 14px;
+      font-size: 1.4rem;
       // line-height: 30px;
       color: $text-color
     }
     &-desc {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 30px;
       color: $heading-color
+    }
+    &-rating {
+      p {
+        font-size: 1.4rem;
+      }
     }
   }
 
@@ -113,17 +107,18 @@
 }
 
 @media screen and (max-width: 1023.98px) {
-  .customer-assess {
-    max-width: 510px
+  .customer {
+    padding-top: 40px;
+    &-assess {
+      max-width: 510px
+    }
   }
 }
 
 
 @media screen and (max-width: 767.98px) {
   .customer {
-    &-heading {
-      font-size: 30px;
-    }
+    padding-top:20px;
     &-assess {
       padding: 20px 14px;
       margin: 0 4px;

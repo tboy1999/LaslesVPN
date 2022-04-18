@@ -5,8 +5,11 @@
 }
 
 
+html {
+  font-size: 10px;  
+}
+
 body {
-  font-size: 16px;
   font-family: $font;
 }
 
@@ -19,21 +22,21 @@ body {
 
 .button {
   cursor: pointer;
-  padding: 13px 45px;
+  padding: 1.3rem 4.5rem;
   border: 1px solid;
   border-radius: 100px;
   color: $primary-color;
   background-color: transparent;
   display: inline-block;
   position: relative;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.1875;
   &:hover {
     background-color: $primary-color;
     color: #fff
   }
   &-big {
-    padding: 17.5px 78px;
+    padding: 1.75rem 7.8rem;
     height: 60px;
     background-color: $primary-color;
     color: #fff;
@@ -54,7 +57,7 @@ body {
     }
   }
   &-select {
-    padding: 13px 63px
+    padding: 1.3rem 6.3rem
   }
   
 
@@ -78,15 +81,12 @@ body {
   color: #fff;
 }
 
-.text {
-  color: $heading-color;
-  &-bold {
-    font-weight: 700;
-  }
-  &-heading {
-    font-weight: 500;
-  }
+.fw700 {
+  font-weight: 700;
+}
 
+.fw500 {
+  font-weight: 500;
 }
 
 a {
@@ -96,6 +96,27 @@ a {
 img {
   display: block;
   max-width: 100%;
+}
+
+.desc-alike {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: calc(30 / 16);
+  color: $text-color;
+}
+
+.heading-alike {
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: calc(50/35);
+  color: $heading-color;
+}
+
+.text-sm-alike {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: calc(30/14);
+  color: $text-color;
 }
 
 .wrapper {
@@ -111,12 +132,29 @@ img {
   }
 }
 
+@media screen and (max-width: 1023.98px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+
 @media screen and (max-width: 767.98px) {
+  html {
+    font-size: 8px;
+  }
   .button {
     &-big {
       height: unset;
-      padding: 14px 20px;
+      padding: 1.4rem 2rem;
     }
   }
 }
+
+@media screen and (max-width: 479.98px) {
+  html {
+    font-size: 7px;
+  }
+}
+
 

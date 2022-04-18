@@ -6,22 +6,15 @@
     display: flex;
   }
   &-desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: $text-color;
     max-width: 340px;
     margin: 30px 0 20px;
   }
   &-icon {
     display: flex;
-    img {
-      margin-left: -20px;
-    }
   }
   &-version {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 30px;
     color: #AFB5C0
   }
@@ -33,19 +26,15 @@
   }
   &-list {
     list-style-type: none;
-    h3 {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 30px;
-      color: $heading-color;
-      margin-bottom: 20px;
-    }
     li {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 30px;
-      color: $text-color;
       margin-bottom: 10px;
+      &:first-child {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 30px;
+        color: $heading-color;
+        margin-bottom: 20px;
+      }
     }
   }
 }

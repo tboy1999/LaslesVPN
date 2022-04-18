@@ -5,17 +5,9 @@
     text-align: center;
  }
   &-heading{
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 50px;
-    color: $heading-color;
     margin-bottom: 20px;
  }
   &-desc{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: $text-color;
     max-width: 555px;
     margin: auto;
     margin-bottom: 60px;
@@ -37,8 +29,8 @@
  }
  &-box-heading {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.8rem;
+  line-height: calc(30/25);
   color: $heading-color;
   margin: 30px 0;
  }
@@ -49,27 +41,21 @@
   &-item{
     display: flex;
     gap: 0 20px;
-    p {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 30px;
-      color: $text-color
-    }
  }
   &-price{
     text-align: center;
     h5 {
       font-weight: 500;
-      font-size: 25px;
-      line-height: 30px;
+      font-size: 2.5rem;
+      line-height: calc(30/25);
       color: $heading-color;
       margin-bottom: 20px;
     }
  }
  &-text {
   font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 2.5rem;
+  line-height: calc(30/25);
   color: $text-color
  }
 
@@ -83,25 +69,25 @@
 }
 @media screen and (max-width: 1023.98px) {
   .plan {
-    padding-top: 40px
+    padding-top: 80px
   }
   .plan-body {
     gap: 0 10px
   }
   .plan-box {
-    padding: 24px
+    padding: 23px
   }
 }
 
 
 @media screen and (max-width: 767.98px) {
-  .plan-heading {
-    font-size: 30px;
+  .plan {
+    padding-top: 40px;
   }
   .plan-body {
     display: grid;
     justify-content: flex-start;
-    grid-auto-columns: 55%;
+    grid-auto-columns: 50%;
     grid-auto-flow: column;
     grid-gap: 1.5rem;
     overflow: auto;
@@ -128,13 +114,10 @@
 }
 
 @media screen and (max-width: 479.98px) {
-.plan-heading {
-    font-size: 30px;
-  }
   .plan-body {
     display: grid;
     justify-content: flex-start;
-    grid-auto-columns: 90%;
+    grid-auto-columns: 60%;
     grid-auto-flow: column;
     grid-gap: 1.5rem;
     overflow: auto;

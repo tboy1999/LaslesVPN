@@ -1,6 +1,5 @@
 .features {
-  margin-top: 95px;
-  margin-bottom: 131px;
+  padding: 9.5rem 0 13.1rem;
   &-container {
     display: flex;
     justify-content: center;
@@ -9,28 +8,18 @@
   }
   &-info {
     margin-top: 55px;
+    max-width: 430px;
+    width: 100%;
   }
   &-heading {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 50px;
-    color: $heading-color;
     max-width: 383px;
   }
-  &-desc-heading {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: $text-color;
+  &-desc {
     margin: 20px 0
   }
-  &-desc {
+  &-item {
     display: flex;
     align-items: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
-    color: $text-color;
     gap: 0 10px;
     margin-bottom: 15px;
   }
@@ -42,14 +31,21 @@
       gap: 0 20px;
     }
     &-info {
-      max-width: 50%
+      max-width: 40%
     }
   }
 }
 
+@media screen and (max-width: 1023.98px) {
+  .features {
+    padding: 80px 0
+  }
+}
+
+
 @media screen and (max-width: 767.98px) {
   .features {
-    margin: 40px 0;
+    padding: 40px 0;
     &-container {
       flex-direction: column;
     }
@@ -57,7 +53,6 @@
       max-width: unset
     }
     &-heading {
-      font-size: 24px;
       max-width: unset
     }
   }

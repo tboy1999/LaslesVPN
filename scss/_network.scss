@@ -2,31 +2,27 @@
   padding-top: 150px;
   text-align: center;
   &-heading {
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 50px;
-    color: $heading-color;
     max-width: 383px;
     margin: auto;
   }
   &-desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: $text-color;
     max-width: 555px;
     margin:20px auto 156px;
   }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1023.98px) {
   .network {
     padding-top: 80px;
+  }
+}
+
+
+@media screen and (max-width: 767.98px) {
+  .network {
+    padding-top: 40px;
     &-desc {
       margin-bottom: 40px;
-    }
-    &-heading {
-      font-size: 30px;
     }
   }
 }

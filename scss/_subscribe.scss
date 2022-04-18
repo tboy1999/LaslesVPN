@@ -1,5 +1,9 @@
 .subscribe {
   transform: translateY(50%);
+  &-heading {
+    line-height: calc(45 / 35);
+    max-width: 371px
+  }
   &-container {
     display: flex;
     align-items: center;
@@ -23,6 +27,9 @@
       a {
         width: max-content;
       }
+    }
+    &-heading {
+      max-width: unset
     }
   }
 }
