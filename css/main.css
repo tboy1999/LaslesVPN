@@ -761,7 +761,7 @@ img {
   }
 
   .customer .slick-dots {
-    margin: 0 auto;
+    margin: 20px auto 0;
   }
 }
 .footer {
